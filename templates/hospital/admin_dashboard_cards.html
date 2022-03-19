@@ -6,8 +6,15 @@
   <title></title>
 
   <style media="screen">
+    /* .market-updates{
+      background-color: transparent;
+    } */
+    body {
+  background-color: lightblue;
+}
+
     .market-update-block {
-      padding: 2em 2em;
+      padding: 0px;
       background: #999;
     }
 
@@ -59,7 +66,7 @@
       -o-transition: 0.5s all;
     }
 
-    .market-update-block.clr-block-1:hover {
+    /* .market-update-block.clr-block-1:hover {
       background: #3C3C3C;
       transition: 0.5s all;
       -webkit-transition: 0.5s all;
@@ -81,11 +88,11 @@
       -webkit-transition: 0.5s all;
       -moz-transition: 0.5s all;
       -o-transition: 0.5s all;
-    }
+    } */
 
     .market-update-right i.fa.fa-user-o {
-      font-size: 3em;
-      color: #68AE00;
+      font-size: 3em ;                                                    
+      color: blue ;                                                                
       width: 80px;
       height: 80px;
       background: #fff;
@@ -99,7 +106,7 @@
 
     .market-update-right i.fa.fa-user-md {
       font-size: 3em;
-      color: #FC8213;
+      color: lightcoral;
       width: 80px;
       height: 80px;
       background: #fff;
@@ -113,7 +120,7 @@
 
     .market-update-right i.fa.fa-calendar {
       font-size: 3em;
-      color: #337AB7;
+      color: goldenrodyellow;
       width: 80px;
       height: 80px;
       background: #fff;
@@ -137,7 +144,7 @@
 
 <body>
   <div class="market-updates">
-    <div class="col-md-4 market-update-gd">
+    <div class="row-md-4 market-update-gd" width = '40cm'>
       <div class="market-update-block clr-block-1">
         <div class="col-md-8 market-update-left">
           <h3>{{doctorcount}}</h3>
@@ -150,7 +157,7 @@
         <div class="clearfix"> </div>
       </div>
     </div>
-    <div class="col-md-4 market-update-gd">
+    <div class="row-md-4 market-update-gd" width = '40cm' >
       <div class="market-update-block clr-block-2">
         <div class="col-md-8 market-update-left">
           <h3>{{patientcount}}</h3>
@@ -163,7 +170,7 @@
         <div class="clearfix"> </div>
       </div>
     </div>
-    <div class="col-md-4 market-update-gd">
+    <div class="row-md-4 market-update-gd" width = '40cm' >
       <div class="market-update-block clr-block-3">
         <div class="col-md-8 market-update-left">
           <h3>{{appointmentcount}}</h3>

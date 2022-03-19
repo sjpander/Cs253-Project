@@ -1,0 +1,3 @@
+1. Remove Signup for Admin in final submission
+2. in clickAdmin center the image
+3. change button color of the admin login page 

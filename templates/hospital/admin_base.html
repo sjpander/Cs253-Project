@@ -19,9 +19,13 @@
     a:link {
       text-decoration: none;
     }
+    body {
+  background-color: lightblue;
+}
+
 
     a {
-      color: white;
+      color: rgb(202, 35, 35);
     }
 
     a:hover {
@@ -89,18 +93,19 @@
 
 
 
-
-
+     /* // background-image : url('https://surge.iitk.ac.in/images/iitk1.jpg') */
     body {
-
-      padding-left: 240px;
+      background-image : url('https://surge.iitk.ac.in/images/iitk1.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      /* padding-left: 240px; */
     }
-    main {
-      position: relative;
-      height: 100vh;
-    }
+    /* main {
+      /* position: relative; */
+      /* height: 100vh; */
+    /* } */ */
 
-    .menu {
+    /* .menu {
       background: #03a9f4;
       height: 100vh;
       width: 240px;
@@ -159,8 +164,8 @@
     }
     .menu ul li:focus {
       outline: none;
-    }
-    @media screen and (max-width: 900px) and (min-width: 400px) {
+    } */
+    /* @media screen and (max-width: 900px) and (min-width: 400px) {
       body {
         padding-left: 90px;
       }
@@ -223,8 +228,8 @@
         opacity: 1;
         transform: translate3d(0px, -50%, 0);
       }
-    }
-    @media screen and (max-width: 400px) {
+    } */
+    /* @media screen and (max-width: 400px) {
       body {
         padding-left: 0;
       }
@@ -267,8 +272,8 @@
       }
       .menu:focus .smartphone-menu-trigger {
         pointer-events: none;
-      }
-    }
+      } */
+    /* } */
 
   </style>
 
@@ -277,13 +282,13 @@
 <body>
 
   <!-- partial:index.partial.html -->
-  <nav class="menu" tabindex="0">
+  <!-- <nav class="menu" tabindex="0">
     <div class="smartphone-menu-trigger"></div>
     <header class="avatar">
-      <img src="{% static "images/adminpropic.png" %}" />
+      <img src="{% static "images/admin.png" %}" />
       <br><br>
-      <h6>Admin</h6>
-      <h2>{{request.user.first_name}}</h2>
+      
+      <h2>Receptionist</h2>
     </header>
     <ul>
       <li tabindex="0" class="icon-dashboard"> <a style="color:white; text-decoration:none;" href="/admin-dashboard"><span>Dashboard</span></a> </li>
@@ -291,15 +296,19 @@
       <li tabindex="0" class="icon-users"> <a style="color:white; text-decoration:none;" href="/admin-patient"><span>Patient</span></a></li>
       <li tabindex="0" class="icon-calendar"> <a style="color:white; text-decoration:none;" href="/admin-appointment"><span>Appointment</span></a></li>
     </ul>
-  </nav>
+  </nav> -->
 
   <main>
 
 
     <!-- nav start -->
     <div class="bs-example">
-      <nav class="navbar navbar-expand-md  navbar-dark fixed-top" style="background:#337AB7;">
-        <a href="/admin-dashboard" class="navbar-brand">HOSPITAL MANAGEMENT</a>
+      <nav class="navbar navbar-expand-lg  navbar-dark fixed-top" style="background:black;">
+        <a href="#" class="navbar-brand">Health Center IITK</a>
+        <a href="/admin-dashboard" class="nav-item nav-link">Home</a>
+        <a href="/admin-doctor" class="nav-item nav-link">Doctor</a>
+        <a href="/admin-patient" class="nav-item nav-link">Patient</a>
+        <a href="/admin-appointment" class="nav-item nav-link">Appointment</a>
         <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -324,21 +333,10 @@
     <!-- content end-->
 
     <br><br><br><br>
-    <footer>
+    <!-- <footer>
      
 
-      <br>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 col-sm-12">
-            <div style="color:#ffffff;" class="wow fadeInUp footer-copyright">
-              <p>
-                Copyright &copy; 2021 Developed By Sumit Kumar </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
+
 
   </main>
 
