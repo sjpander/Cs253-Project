@@ -8,6 +8,7 @@
 
   <style>
     .invoice-box {
+      background-color: antiquewhite;
       max-width: 800px;
       margin: auto;
       padding: 30px;
@@ -106,6 +107,11 @@
     .download {
       text-align: center;
       display: block;
+    }
+    body {
+      background-image : url('https://surge.iitk.ac.in/images/iitk1.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
     }
   </style>
 </head>
@@ -237,9 +243,8 @@
 
 
 {%else%}
-<h5 style="text-align:center;">You Are Not Discharged By Hospital !</h5>
+<h5 style="text-align:center;">Currently you dont't have any record !</h5>
 <br><br>
-<h6 style="text-align:center;">You Can Download Invoice after getting discharged.</h6>
 {%endif%}
 
 <br><br><br><br><br><br><br><br>

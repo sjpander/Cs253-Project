@@ -8,8 +8,6 @@ from django.contrib.auth.views import LoginView,LogoutView
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',views.home_view,name=''),
-
-
     path('aboutus', views.aboutus_view),
     path('contactus', views.contactus_view),
 
@@ -65,8 +63,6 @@ urlpatterns = [
     path('reject-appointment/<int:pk>', views.reject_appointment_view,name='reject-appointment'),
 ]
 
-
-#---------FOR DOCTOR RELATED URLS-------------------------------------
 urlpatterns +=[
     path('doctor-dashboard', views.doctor_dashboard_view,name='doctor-dashboard'),
 
@@ -80,10 +76,6 @@ urlpatterns +=[
     path('delete-appointment/<int:pk>', views.delete_appointment_view,name='delete-appointment'),
 ]
 
-
-
-
-#---------FOR PATIENT RELATED URLS-------------------------------------
 urlpatterns +=[
 
     path('patient-dashboard', views.patient_dashboard_view,name='patient-dashboard'),

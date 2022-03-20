@@ -54,7 +54,7 @@ class Appointment(models.Model):
     doctorName=models.CharField(max_length=40,null=True)
     appointmentDate=models.DateField(auto_now=True)
     description=models.TextField(max_length=500)
-    status=models.BooleanField(default=False)
+    status=models.BooleanField(default=True)
 
 
 
@@ -70,11 +70,13 @@ class PatientDischargeDetails(models.Model):
     releaseDate=models.DateField(null=False)
     daySpent=models.PositiveIntegerField(null=False)
 
-    roomCharge=models.PositiveIntegerField(null=False)
-    medicineCost=models.PositiveIntegerField(null=False)
-    doctorFee=models.PositiveIntegerField(null=False)
-    OtherCharge=models.PositiveIntegerField(null=False)
-    total=models.PositiveIntegerField(null=False)
+    roomCharge=models.PositiveIntegerField(default=0)
+    medicineCost=models.PositiveIntegerField(default=0)
+    doctorFee=models.PositiveIntegerField(default=0)
+    OtherCharge=models.PositiveIntegerField(default=0)
+    total=models.PositiveIntegerField(default=0)
+
+
 
 
 
